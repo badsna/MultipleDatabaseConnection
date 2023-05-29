@@ -1,0 +1,72 @@
+{
+	"info": {
+		"_postman_id": "3d0a9d1c-c717-4e8c-99fb-a69e6a2a2154",
+		"name": "ProductDetails",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "getProductDetailsById",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/productDetails/getProductDetailsById/5",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"productDetails",
+						"getProductDetailsById",
+						"5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deleteProductDetailsById",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/productDetails/deleteProductById/5",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"productDetails",
+						"deleteProductById",
+						"5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getAllProductDetailsUsingPagination",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/productDetails/getAllProductDetailsUsingPagination/0",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"productDetails",
+						"getAllProductDetailsUsingPagination",
+						"0"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

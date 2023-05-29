@@ -1,0 +1,108 @@
+{
+	"info": {
+		"_postman_id": "5aede11e-adf9-4831-85c0-eb2b5f12a439",
+		"name": "FileDetails",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "getAllFileDetails",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/fileDetails/getAllFileDetails",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"fileDetails",
+						"getAllFileDetails"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "addNewFileDetails",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"filePath\": \"F:\\\\Intern\\\\DocumentsForIntern\\\\Product\\\\product1.csv\"    \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/fileDetails/addNewFileDetails",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"fileDetails",
+						"addNewFileDetails"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updateFIleDetails",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"fileDetailsId\": 1,\r\n    \"filePath\": \"F:\\\\Intern\\\\Doct\\\\Mock_Flight_data1.csv\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/fileDetails/updateFileDetails",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"fileDetails",
+						"updateFileDetails"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getFileDetailsById",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/fileDetails/getFileDetailsById/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"fileDetails",
+						"getFileDetailsById",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
